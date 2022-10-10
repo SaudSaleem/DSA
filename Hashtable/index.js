@@ -1,4 +1,5 @@
 class HashTable {
+  
     constructor() {
       this.table = new Array(127);
       this.size = 0;
@@ -34,13 +35,14 @@ class HashTable {
         return false;
       }
     }
+    static saud = "saleem"
   }
   
   //
   const ht = new HashTable();
 
 ht.set("Spain", 110);
-ht.set("ǻ", 192);
+ht.set("s", 192);
 
 console.log(ht.get("Spain")); // [ 'ǻ', 192 ]
-console.log(ht.get("ǻ")); // [ 'ǻ', 192 ]
+console.log(ht.get("s")); // [ 'ǻ', 192 ]
